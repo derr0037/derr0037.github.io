@@ -1,0 +1,124 @@
+
+html {
+    background-color: #6F8F72;
+    color: #504B43;
+}
+/* Sets the background of the html document to colour #6F8F72 and the documents text to colour #504B43 */
+
+body {
+    width: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 
+Sets the width of the elements contents to 100% of the screen size and margins to auto
+Sets the display to a flexbox, in the column direction with the items aligned in the center
+*/
+
+#nav.nav {
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #212922;
+    padding:0px;
+    border: 0px;
+    min-width: 760px;
+}
+/* 
+Sets the navigations width to 100% of the screen size, displaying in flex with items evenly spaced
+background colour changes to #212922, padding and border are removed and a minimum width is set at 760px
+*/
+
+#nav a {
+    margin: 30px 16px;
+    color: #E9EBF8;
+}
+/* Sets the nav links to the colour #E9EBF8 and adds vertical margins of 30px and horizontal margins at 16px*/
+
+main#main {
+    width: auto;
+    max-width: 1400px;
+}
+/* Automates the width of the content in main and sets a max-width to 1400px*/
+
+section#home {
+    padding: 50px;
+    background-color: #8FD694 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Adds 50px of padding, changes the background colour to #8FD694 and sets the font family form the home section */
+
+section#about {
+    padding: 50px;
+    background-color: #E9EBF8;
+    color: #504B43;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/* Adds 50px of padding, changes the background colour to #E9EBF8, text colour to #504B43 and font size to 1.5rem
+Font family is set for the about section*/
+
+section#contact {
+    padding: 50px;
+    background-color: #8FD694;
+    font-size: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Adds 50px of padding, changes the background colour to #8FD694, font size is set to 1.5rem, display is set to flex
+and the flex direction is set to column, font family is set for the contact section  */
+
+main .page-title, main .section-title  {
+    margin-top: 0px;
+}
+/*clears the margin for the section titles */
+
+form.contact-form {
+    background-color: #E9EBF8;
+    color: #212922;
+    border: #212922 solid 3px;
+}
+/* 
+Background colour is set to #E9EBF8, text colour is set to #212922 and a border of the same colour at 3px thickness
+is added to the contact form section.
+*/
+
+form div {
+    margin: 10px 0px;
+}
+
+
+input.contact-form-input, textarea.contact-form-input {
+    padding-left:0px;
+    padding-right: 0px;
+}
+/*left and right padding is removed from the contact form inputs */
+
+footer {
+    text-align: center;
+    color: #E9EBF8;
+}
+/* Text is aligned to the center and the colour is set to #E9EBF8 */
+
+@media screen and (min-width:1043px){
+
+    img.about-image {
+        width: 175px;
+    }
+    /* the about image width is set to 175 */
+}
+/* For screens bigger than or equal to 1043px */
+
+@media screen and (min-width: 1920px){
+
+    #nav.nav {
+        display:flex;
+        justify-content: center;
+    }
+    /* Navigation display is set to flex, content is justified to the center*/
+}
+/* For screens bigger than or equal to 1920px */
