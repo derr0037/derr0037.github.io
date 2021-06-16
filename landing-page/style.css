@@ -27,21 +27,11 @@ header img {
     padding-top:10px;
 }
 
-
-@font-face {
-    font-family: montserrat;
-    src: url(fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-    font-family: montserratBold;
-    src: url(fonts/Montserrat-Bold.ttf);
-}
-
 h1 {
     font-size: 60px;
     line-height: 73px;
-    font-family: montserratBold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     margin: 0px;
     margin-bottom: 1px;
 }
@@ -49,7 +39,7 @@ h1 {
 h3 {
     font-size: 24px;
     line-height: 29px;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0px;
 }
@@ -59,14 +49,16 @@ main img {
     margin-bottom: 15px;
 }
 
+/* Flex was chosen for a simple column layout with content that responds to different screen sizes */
 .apply-box {
     border-radius: 26px;
     background-color: #FFFFFF;
-    box-shadow: 5px 10px 15px #333131;
+    box-shadow: 5px 10px 15px rgb(51, 49, 49, 0.4);
     padding: 25px;
     display: flex;
     flex-direction: column;
     margin-bottom: 46px;
+    height: auto;
 }
 
 .apply-box h3:nth-of-type(2) {
@@ -75,7 +67,8 @@ main img {
 
 h2 {
     font-size: 40px;
-    font-family: montserratBold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     margin: 0px;
 }
 
@@ -86,7 +79,7 @@ h2 {
 }
 
 form input {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     padding: 10px;
@@ -102,31 +95,30 @@ form input {
     height: 25px;
     border-radius: 5px;
     border-color: #333131;
+    margin-right: 10px;
 }
 
 .checklabel {
     margin-bottom: 15px;
+    display:flex;
+    align-items: center;
 }
 
 label {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
-input [type="checkbox"] {
-    vertical-align: middle;
-    position: relative;
-}
-
 .apply-box p {
-    font-family: montserrat;
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
 }
 
 .apply-box p a {
     color: #FF8480;
 }
 
+/* Flex was chosen to ensure that the contents fit the width of the container at different screen sizes*/
 .apply-box form {
     display: flex;
     flex-direction: column;
@@ -136,7 +128,8 @@ button {
     border:none;
     border-radius: 11px;
     background-color: #57EEAB;
-    font-family: montserratBold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 24px;
     text-align: center;
     height: 55px;
@@ -153,6 +146,7 @@ footer {
     margin-right: 35.5px;
 }
 
+/* Grid was chosen so that the form contents could be arranged in specific order with specific sizes for each content*/
 footer form {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -177,7 +171,7 @@ footer form {
 }
 
 .content h4 {
-    font-family: montserratBold;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin: 0px;
     margin-bottom: 10px;
@@ -190,6 +184,7 @@ footer form {
     margin-bottom: 10px;
 }
 
+/* Flex was chosen so that the contents could have equal spacing between each other up to the given width*/
 .icons {
     margin: 0px;
     margin-left: auto;
@@ -205,6 +200,7 @@ footer form {
     header {
         margin-left: 80px;
         margin-right: 80px;
+        margin-bottom: 25px;
     }
 
     main {
@@ -220,14 +216,24 @@ footer form {
     h1 {
         font-size: 80px;
         line-height: 97px;
+        margin-top: 7px;
     }
 
+    /*--  --*/
     main img {
-        max-width: 70%;
-        height: auto;
-        position: relative;
-        left: 89.653px;
-        bottom: 25px;
+        display: none;
+    }
+
+    html {
+        background-image: url(images/bg-image/scooter.svg);
+        background-size: 55%;
+        background-position-y: 35.5%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+
+    .text h3 {
+        margin-bottom: 334px;
     }
 
     .apply-box {
@@ -246,8 +252,10 @@ footer form {
 
     .apply-box p {
         text-align: center;
+        font-size: 17px;
     }
 
+    /*-- Uses a grid display to ensure the content remains the same size relative to the container as the viewport width changes */
     .content form {
         display: grid;
         grid-template-columns: 20% 43% 33%;
@@ -272,20 +280,34 @@ footer form {
 
 @media screen and (min-width: 1280px){
     
+    html {
+        background-image: none;
+    }
+
     header {
         margin-left: 140px;
         margin-right: 140px;
-        margin-bottom: 39px;
+        margin-bottom: 58px;
     }
 
+    /*-- Grid was chosen so that the content can be placed specifically and to ensure the width of the contents
+    stays the same relative to the container as the viewport width changes --*/
     main {
         margin-left: 140px;
         margin-right: 140px;
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-template-rows: 1fr;
+        grid-template-rows: auto;
         gap: 1%;
         margin-bottom: 92px;
+        background-image: url(images/bg-image/scooter.svg);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: 50% auto;
+    }
+
+    main img {
+        display: none;
     }
 
     .content {
@@ -296,10 +318,11 @@ footer form {
     }
     
     footer {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 39.5px;
+        padding-bottom: 39.5px;
     }
 
+    /* Sets the span of the content from gridlines 1-5 and places the content in the first row*/
     main .text {
         grid-column: 1/5;
         grid-row: 1/2;
@@ -309,13 +332,11 @@ footer form {
         margin-bottom: 30px;
     }
 
-    main img {
-        position: static;
-        max-width:none;
-        grid-column: 4/10;
-        grid-row: 1/2;
+    .text h3 {
+        margin-bottom: auto;
     }
 
+    /* Sets the span of the content from gridlines 9-13 and places the content in the first row*/
     main .apply-box {
         grid-column: 9/13;
         grid-row: 1/2;
@@ -324,6 +345,8 @@ footer form {
     .apply-box {
         padding-top: 25px;
         padding-bottom: 45px;
+        max-height: 590px;
+        margin: 0px;
     }
 
     .apply-box h3:nth-of-type(1) {
