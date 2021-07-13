@@ -43,6 +43,7 @@ li a.current {
 
 .trimCont {
     display: flex;
+    max-width:100%;
 }
 
 .mainContent {
@@ -57,7 +58,8 @@ li a.current {
 }
 
 .firstImg {
-    width:auto;
+    width:100%;
+    height: auto;
     margin-bottom: 15px;
 }
 
