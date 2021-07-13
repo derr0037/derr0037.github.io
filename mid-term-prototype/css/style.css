@@ -43,6 +43,9 @@ li a.current {
 
 .trimCont {
     display: flex;
+}
+
+.trim {
     max-width:100%;
 }
 
