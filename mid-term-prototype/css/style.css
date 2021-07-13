@@ -43,10 +43,11 @@ li a.current {
 
 .trimCont {
     display: flex;
+    max-width: fit-content;
 }
 
 .trim {
-    max-width:100%;
+    width:100%;
 }
 
 .mainContent {
