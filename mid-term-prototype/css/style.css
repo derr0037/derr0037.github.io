@@ -43,11 +43,10 @@ li a.current {
 
 .trimCont {
     display: flex;
-    max-width: fit-content;
 }
 
 .trim {
-    width:100%;
+    max-width:100%;
 }
 
 .mainContent {
@@ -207,6 +206,32 @@ h5 {
     text-align: center;
     margin: 0px;
     color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .firstContent {
+        display:grid;
+        grid-template-areas: 
+        "image image image icons"
+        "image image image icons"
+        "text text text icons"; 
+    }
+
+    .firstImg {
+        grid-area: image;
+    }
+
+    .rightTop {
+        grid-area: text;
+    }
+
+    .webIcons {
+        grid-area: icons;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
 }
 
 @media screen and (min-width: 1600px) {
