@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap This!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid bg-light">
+          <a class="navbar-brand" href="#">Bootstrap This!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="offset-1 col-10 offset-lg-3 col-lg-6">
+                <h1>What is Bootstrap?</h1>
+                <p>Bootstrap is a framework, developed through the use of only HTML, that allows you to build responsive, mobile-first websites quickly and easily. The boostrap toolkit is open source, allowing you to simply build a prototype for your idea, or develope a full website with multitude of components within a responsive grid system.</p>
+                <p><strong>The bootstrap structure works as follows:</strong></p>
+            </div>
+        </div>
+
+        <div class="row text-center mb-3">
+            <div class="offset-1 col-10 offset-md-0 col-md-6 col-lg-4">
+                <h2>Containers</h2>
+                <p>
+                    The primary layout element within bootstrap. Used to contain content within itself following the default 12 coloumn grid system. Containers can be nested, but that isnt something frequently used within most layouts.
+                </p>
+            </div>
+            <div class="offset-1 col-10 offset-md-0 col-md-6 col-lg-4">
+                <h2>Rows</h2>
+                <p>
+                    The second tier of the bootstrap structure. Their role is to contain any columns you would like to see inline together. Rows deault to flex box, ie the height of a row is determined by the content within it.
+                </p>
+            </div>
+            <div class="offset-1 col-10 offset-md-2 col-md-8 offset-lg-0 col-lg-4">
+                <h2>Columns</h2>
+                <p>
+                    The final tier of the bootstrap structure. The role of columns is to contain the content that is going to be displayed on the specific section that it is located. Columns can be defined within the 12 column grid system by adding the class col-#; specifying the specific width.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 offset-1">
+                <h1>Bootstrap Components</h1>
+                <p>Bootstrap comes with an array of pre-built, responsive and customizable components. Components are built with base-modifier nomenclature, meaning shared properties are grouped into a base class, and are given individual styles through a modifier class. Components are easy to implement and require no java or css script. <strong>Below are a few examples of the many bootstrap components:</strong></p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="offset-1 col-6 col-lg-3">
+                <h3>Buttons</h3>
+                <p>
+                    Buttons are one of the many pre-built components within bootstrap, and probably one of the most commonly used. Buttons are defined by giving an element the class ".btn" and can then be customized using given modifier classes. The buttons to the right have the classes ".btn-primary", ".btn-secondary" and ".btn-success" respectively.
+                </p>
+            </div>
+            <div class="d-grid gap-3 col-4 col-lg-2 mt-3 mb-3">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+            </div>
+            <div class="offset-1 col-6 offset-lg-0 col-lg-3">
+                <h3>Cards</h3>
+                <p>
+                    A card is an extensible container, which seperates itself using a border and padding. Cards can be fully customized, with options for a header and footer, and the ability to conatain other bootstrap content and components such as images, buttons, lists and so on.
+                </p>
+            </div>
+            <div class="card col-4 col-lg-2 p-0 mt-3 mb-3">
+                <div class="card-header">Sample Card</div>
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">This is a card! Isn't that neat?</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="offset-1 col-10 col-lg-5 mb-3">
+                <h3>Accordion</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          This is an accordian component. It allows you to display a series of information as well as individually view further content that is hidden within a collapsible dropdown. The accordian defaults to have the first items body opened, this can however be changed using a modifier class. Classes can make it so that specific collapse classes stay open until closed, default as closed and so on.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          This is the second items body, notice how the first body has now collapsed!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class=" offset-1 col-5 offset-lg-0 col-lg-3">
+                <h3>List Group</h3>
+                <p>A list group is a clean and flexable component that allows you to display a series of content. List groups are able to be modified to support any content within them and come with a variety of modifier classes to fit your needs.</p>
+            </div>
+            <div class="col-5 col-lg-2">
+                <ul class="list-group">
+                    <li class="list-group-item">List Item</li>
+                    <li class="list-group-item active" aria-current="true"> Active Item</li>
+                    <li class="list-group-item disabled">Disabled Item</li>
+                    <a href="#" class="list-group-item">Link Item</a>
+                </ul>
+            </div>
+        </div>
+        <div class="row pt-3 pb-3 bg-dark text-light">
+            <div class="col-12">
+                <h5>Bootstrap This!</h5>
+                <h5>Mitchell Derry - Responsice Webdesign II</h5>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
