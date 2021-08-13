@@ -1,0 +1,334 @@
+:root {
+    --primary: #C6DDEF;
+    --secondary: #061838;
+    --t-color: #070707;
+    --heading: 'Bree Serif', serif;
+    --sub-head: 'Varela Round', sans-serif;
+    --text: 'Signika Negative', sans-serif;
+}
+
+.tb-img {
+    display: none;
+}
+
+.dt-img {
+    display: none;
+}
+
+body {
+    margin:0px;
+    background-color: var(--primary);
+}
+
+img.picture {
+    max-width: 100%;
+    width:fit-content;
+    height: auto;
+}
+
+img.banner {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: var(--heading);
+    font-size: 40px;
+    margin: 0px; 
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    font-family: var(--sub-head);
+    color: var(--primary);
+    font-size: 20px;
+}
+
+p {
+    font-family: var(--text);
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 16px;
+    color: var(--t-color);
+}
+
+h4 {
+    font-family: var(--sub-head);
+    color: var(--primary);
+    font-size: 18px;
+}
+
+a.button {
+    width: 182px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    font-family: var(--sub-head);
+    font-size: 24px;
+    color: var(--primary);
+    align-self: center;
+}
+
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    font-family: var(--sub-head);
+    font-size: 24px;
+    color: var(--primary);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    font-size: 24px;
+    padding: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border-color: #707070;
+}
+
+form input:nth-child(3) {
+    height: 152px;
+}
+
+/* Header Code */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11px;
+    padding-bottom: 0px;
+    background-color: var(--secondary);
+}
+
+img.logo {
+    height: 58px;
+    width: auto;
+    margin-bottom: 7px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin:0px;
+}
+
+ul li {
+    margin-bottom: 11px;
+}
+
+/*  Main Code   */
+
+main {
+    text-align: center;
+    padding: 30px;
+}
+
+.home-block-one {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-icons {
+    display: flex;
+    height: 240px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+
+.home-icons img {
+    max-width: 116px;
+}
+
+.home-icons img:nth-child(2) {
+    height: 116px;
+    align-self: flex-end;
+}
+
+.mb-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.mb-img img {
+    margin-bottom: 16px;
+}
+
+.mb-img img:last-child {
+    margin-bottom: 0px;
+}
+
+.serv-block-one {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.serv-icon {
+    max-width: 142px;
+    max-height: 142px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.services {
+    border-top: solid 1px var(--secondary);
+    border-bottom: solid 1px var(--secondary);
+    margin-bottom: 16px;
+}
+
+.services h4 {
+    color: var(--t-color);
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.port-icons img {
+    max-width: 182px;
+    height: auto;
+}
+
+.port-logos img:first-child {
+    margin-bottom: 16px;
+}
+
+.PaV-block {
+    margin-bottom: 16px;
+}
+
+.btn-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-icon a img {
+    height: 59px;
+}
+
+.samples h4 {
+    font-size: 24px;
+    color: var(--secondary);
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.about-icons img {
+    max-height: 96px;
+    max-width: 96px;
+}
+
+.about-edu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    border-top: solid 1px var(--secondary);
+}
+
+.about-hobbies {
+    border-top: solid 1px var(--secondary);
+    padding-top: 16px;
+}
+
+.about-hobbies p {
+    margin-bottom: 0px;
+}
+
+.contact-email {
+    border-bottom: solid 1px var(--secondary);
+    margin-bottom: 16px;
+}
+
+.contact-email img {
+    max-width: 142px;
+    margin-bottom: 16px;
+}
+
+.contact-email h4 {
+    font-family: var(--text);
+    font-size: 24px;
+    color: var(--t-color);
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+/* footer code */
+
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--secondary);
+}
+
+footer h4 {
+    margin: 0px;
+}
+
+.social-icons {
+    display: flex;
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto;
+}
+
+.social-icons img:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .mb-img {
+        display: none;
+    }
+
+    .tb-img {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .tb-img {
+        display: none;
+    }
+
+    .dt-img {
+        display: block;
+    }
+}
