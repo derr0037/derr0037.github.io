@@ -2,6 +2,7 @@
     --primary: #C6DDEF;
     --secondary: #061838;
     --t-color: #070707;
+    --purple: #816E94;
     --heading: 'Bree Serif', serif;
     --sub-head: 'Varela Round', sans-serif;
     --text: 'Signika Negative', sans-serif;
@@ -132,6 +133,10 @@ nav ul {
 
 ul li {
     margin-bottom: 11px;
+}
+
+nav a.current {
+    color: var(--purple);
 }
 
 /*  Main Code   */
